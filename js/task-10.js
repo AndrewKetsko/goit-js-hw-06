@@ -27,7 +27,6 @@ function createBoxes() {
 };
 
 function destroyBoxes() { 
-  console.log('destroy');
   insertPlaceEl.innerHTML = '';
   
 };
