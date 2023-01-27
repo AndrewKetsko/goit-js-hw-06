@@ -41,11 +41,13 @@ function createBoxes() {
   width += 10;
   height += 10;
   total += amount;
+  inputEl.value = 0;
 };
 
 function destroyBoxes() { 
   insertPlaceEl.innerHTML = '';
   width = 30;
   height = 30;
-  total = 0;  
+  total = 0; 
+  amount = 0;
 };
