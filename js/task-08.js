@@ -9,7 +9,7 @@ function submitFunc(event) {
     const {elements: { email, password }} = event.currentTarget;
 
     if (email.value === ''
-        || password.value === '') {
+        || password.value.trim() === '') {
         alert('All fields must be filled!');
     } else {
 

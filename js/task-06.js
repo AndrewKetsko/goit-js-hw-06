@@ -3,7 +3,7 @@ const dataLength = +inputEl.getAttribute('data-length');
 
 inputEl.addEventListener('blur', () => {
 
-    if (inputEl.value.length === dataLength) {
+    if (inputEl.value.trim().length === dataLength) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
     } else {
