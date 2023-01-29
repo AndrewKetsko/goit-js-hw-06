@@ -18,6 +18,7 @@ destroyEl.addEventListener('click', destroyBoxes);
 function countAmount() {
   // amount = (+inputEl.value) > 100 ? 100 : (+inputEl.value);
   if (+inputEl.value > 100) {
+    alert('Maximum q-ty of squares are 100!!!')
     inputEl.value = 100;
     amount = 100;
   } else { amount = (+inputEl.value) }
@@ -29,7 +30,7 @@ function createBoxes() {
   let divString = '';
 
   if (total >= 100) {
-    alert('You reached maximum of squares!!!')
+    alert('You reached maximum of squares!!!');
   }
   
   for (let i = 0; i < amount; i += 1) {
